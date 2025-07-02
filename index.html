@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <span>&lt;/&gt;</span><strong>CodeWithHarry</strong>
+      </div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Tutorials</a>
+        <a href="#">Blog</a>
+        <a href="#">Notes</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <span class="kbd">⌘ K</span>
+      </div>
+      <div class="auth-buttons">
+        <button class="login">Login</button>
+        <button class="signup">Signup</button>
+        <button class="toggle-btn"><span id="toggle-icon">🌙</span></button>
+      </div>
+    </div>
+    <div class="nav_2">
+      <a href="#">Start Learning ▼</a>
+      <a href="#">Tutorials ▼</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <p class="badge">Learn coding the right way</p>
+      <h1>Welcome to <strong>CodeWithHarry</strong></h1>
+      <h2>Learn Python</h2>
+      <p class="description">
+        Confused about which course to take? We've got you covered! Browse courses and <br> 
+        discover the best option for you. It's free!
+        <strong>CodeWithHarry</strong> is my effort to teach the  <br>
+        basics and those coding techniques in a short time that took me years to master.
+      </p>
+      <div class="buttons">
+        <a href="#" class="btn primary">Explore Courses</a>
+        <a href="#" class="btn secondary">Read Articles</a>
+      </div>
+      <div class="stats">
+        <div><strong>100+</strong><br>Courses</div>
+        <div><strong>500K+</strong><br>Students</div>
+        <div><strong>5.0</strong><br>Rating</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice Section -->
+  <section class="practice-section">
+    <div class="container">
+      <h1 class="section-title">Code Smarter with Real-World Practice</h1>
+      <p class="section-subtext">
+        At CodeWithHarry, you don't just learn code — you engage in practical exercises that reflect real-world scenarios.
+        From beginner-friendly lessons to advanced courses trusted by professionals, we prepare you for real-world projects.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <img src="https://www.codewithharry.com/_next/image?url=%2Fcoding%2F2.jpg&w=1920&q=75" alt="Web Development">
+          <div class="card-content">
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS, JavaScript and modern frameworks to build responsive websites and web applications.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://www.codewithharry.com/_next/image?url=%2Fcoding%2F3.jpg&w=1920&q=75" alt="Data Science & AI">
+          <div class="card-content">
+            <h3>Data Science & AI</h3>
+            <p>Master Python, data analysis, machine learning and artificial intelligence with hands-on projects.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://www.codewithharry.com/_next/image?url=%2Fcoding%2F4.jpg&w=1920&q=75" alt="Data Structures & Algorithms">
+          <div class="card-content">
+            <h3>Data Structures & Algorithms</h3>
+            <p>Learn DSA and crack interviews at top companies like Google and Microsoft.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <header>
+    <h1>Empowering Aspiring Developers to Build Their Future in Tech!</h1>
+  </header>
+
+  <section class="stats">
+    <div>
+       <p>Students land their first developer job in</p><br>
+      <h2>6 months</h2>
+        <strong>on average</strong></p>
+    </div>
+    <div>
+     <p>Over </P><br>
+     <h2>7,000,000+</h2>
+      <p><strong>students trained</strong></p>
+    </div>
+    <div>
+      <p>Total Youtube Views </P><br>
+      <h2>1 Billion+</h2>
+      <p><strong>views and counting</strong></p>
+    </div>
+  </section>
+
+  <section class="hiring-companies">
+    <h2>Helped students achieve their dream job at</h2>
+    <div class="companies-grid">
+            <img src="https://www.codewithharry.com/logos/amazon.png" alt="Amazon">
+      <img src="https://www.codewithharry.com/logos/google.png" alt="Google">
+      <img src="https://www.codewithharry.com/logos/microsoft.png" alt="Microsoft">
+      <img src="https://www.codewithharry.com/logos/goldman.png" alt="Goldman Sachs">
+      <img src="https://www.codewithharry.com/logos/paypal.png" alt="PayPal">
+      <img src="https://www.codewithharry.com/logos/samsung.png" alt="Samsung">
+      <img src="https://www.codewithharry.com/logos/ey.png" alt="EY">
+      <img src="https://www.codewithharry.com/logos/hitachi.png" alt="Hitachi">
+      <img src="https://www.codewithharry.com/logos/jpmorgan.png" alt="JPMorgan">
+      <img src="https://www.codewithharry.com/logos/ibm.png" alt="IBM">
+      <img src="https://www.codewithharry.com/logos/dell.png" alt="Dell">
+      <img src="https://www.codewithharry.com/logos/deloitte.png" alt="Deloitte">
+
+    </div>
+  </section>
+
+</body>
+</html>
+
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    const toggleBtn = document.querySelector(".toggle-btn");
+    const toggleIcon = document.getElementById("toggle-icon");
+
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      toggleIcon.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+    });
+  </script>
+</body>
+</html>

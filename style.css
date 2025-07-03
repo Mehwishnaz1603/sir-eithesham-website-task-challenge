@@ -169,7 +169,7 @@
 
 .buttons {
   margin-bottom: 50px;
-  padding-right: 120px;
+  padding-right: 80px;
   margin-top: 30px;
 }
 
@@ -195,7 +195,7 @@
 
 .stats {
   position: absolute;
-  left: 43%;
+  left: 46%;
   transform: translateX(-50%);
   background: rgba(255, 255, 255, 0.95);
   display: flex;
@@ -204,16 +204,25 @@
   border-radius: 15px;
   font-size: 18px;
   z-index: 2;
-  padding: 10px 30px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.85),
+    rgba(255, 255, 255, 0.5)
+  );
+  z-index: 1;
+  padding: 5px 25px;
+  
 }
 
 .stats div {
   text-align: center;
   color: #000;
+  margin-top: 15px;
+  
 }
 
 .stats strong {
   font-size: 30px;
+  margin-top: 5px;
 }
 
 .stats h1 {
@@ -225,23 +234,24 @@
   background-color: white;
   min-width: 1200px;
 }
-  .container-1-title h1 {
-      font-size: 35px;
+
+  .sub-heading h1 {
+      font-size:  32px;
       font-weight: bold;
       margin-top: 50px;
       text-align: center;
       padding-left: 100px;
-      margin-right: 30px;
+      margin-right: 100px;
       margin-bottom: 10px;
     }
 
-    .container-1-subtext {
+    .sub-text p {
       font-size: 19px;
-      color: #555;
-      max-width: 800px;
-      margin: 0 auto 50px;
-      line-height: 1.6;
+      color: grey;
+      margin-top: 30px;
+      line-height: 1.4;
       text-align: center;
+      margin-bottom: 30px;
     }
 
     .cards {
@@ -249,6 +259,7 @@
       flex-wrap: wrap;
       gap: 30px;
       justify-content: center;
+      box-shadow: #1e1e1e;
     }
 
 .card {
@@ -256,6 +267,9 @@
   border-radius: 10px;
   overflow: hidden;
   width: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.062);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.11);
+
 }
 .cards :hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.37);
@@ -297,6 +311,7 @@
   color: #000;
   padding-left: 150px;
   margin-bottom: 50px;
+  margin-top: 60px;
 
   
 }
@@ -326,18 +341,24 @@ margin-right: 120px;
 
 }
 
-.container_3 {
+.container-3 {
   text-align: center;
   padding: 60px 40px;
-  background-color: #f8f8f8e1;
+  background-color: #555555a2;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.85),
+    rgba(255, 255, 255, 0.5)
+  );
+  z-index: 1;
+
 }
 
 .container-3 h2 {
-  font-size: 1.9rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   margin-top: 20px;
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 4rem;
   
 }
 
@@ -347,11 +368,12 @@ margin-right: 120px;
 
 .companies {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* increased min width */
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+  gap: 1rem;
   justify-items: center;
   align-items: center;
-  padding: 30px 60px;
+  padding: 20px 20px;
+  border-radius: 10px;
 }
 
 .companies img {
@@ -364,6 +386,7 @@ margin-right: 120px;
   margin-bottom: 5px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 
+
 }
 
 .companies img:hover {
@@ -374,40 +397,39 @@ margin-right: 120px;
 
 
 .container-4 {
-  background-color: #cccccc65;
-  padding: 60px 20px;
-  text-align: center;
+  background-color: rgba(204, 204, 204, 0.247); /* more readable than hex+alpha */
+  padding: 60px 30px;
   margin-top: 10px;
 }
 
-.section-heading-1{
-  font-size: 1.1rem;
+.section-heading-1 {
+  font-size: 17px; 
+  color: rgb(83, 83, 83);
+  margin-bottom: 15px;
   text-align: left;
   padding-left: 20px;
-  color: rgb(83, 83, 83);
-  font-weight: bold;
-  margin-bottom: 15px;
+  font-weight: 600;
 }
+
 .section-title {
   font-size: 2.1rem;
   margin-bottom: 50px;
   font-weight: bold;
-  text-align: justify;
+  text-align: left;
   padding-left: 20px;
-
 }
 
 .offerings {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px;
+  gap: 30px;
   max-width: 1400px;
   height: 500px;
   margin: 0 auto;
 }
 
 .card_1 {
-  background: rgba(211, 211, 211, 0.973);
+  background: rgba(211, 211, 211, 0.993);
   border-radius: 10px;
   padding: 10px 10px;
   margin-bottom: 5px;
@@ -427,15 +449,15 @@ margin-right: 120px;
 }
 
 .card_1 h3 {
-  margin-top: 20px;
-  font-size: 18px;
+  font-size: 20px;
   padding: 20px;
 
 }
 
 .card_1 p {
-  font-size: 14px;
+  font-size: 16px;
   color:grey;
+  padding: 15px;
 }
 
 .testimonials-section {

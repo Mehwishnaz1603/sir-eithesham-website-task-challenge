@@ -37,7 +37,7 @@
     .nav-links {
       display: flex;
       gap: 30px;
-    margin-left: 60p;
+    margin-left: 31px;
     }
 
     .nav-links a {
@@ -78,6 +78,7 @@
       background: white;
       border-radius: 5px;
       cursor: pointer;
+      margin: 5px;
 
     }
     .nav-2 {
@@ -320,7 +321,7 @@
 
   
 }
-.stats_row p{
+.stats-row p{
   font-size: 1.2rem;
   color: gray;
   padding: 5px;
@@ -329,7 +330,7 @@
 
 }
 
-.stats_row h3{
+.stats-row h3{
   font-size: 2.8rem;
   margin-top: 50px;
   text-align: center;
@@ -338,7 +339,7 @@
   
 }
 
-.stats_row h4{
+.stats-row h4{
     font-size: 1.2rem;
   color: gray;
   text-align: center;
@@ -407,7 +408,7 @@ margin-bottom: 80px;
   padding: 60px 30px;
   margin-top: 10px;
   text-align: center;
-  height: 135vh;
+  height: 122vh;
 }
 
 .section-heading-1 {
@@ -434,13 +435,14 @@ margin-bottom: 80px;
   max-width: 1400px;
   height: 500px;
   margin: 0 auto;
+  margin-bottom: 3px;
 }
 
-.card_1 {
+.card-1 {
   background:rgba(0, 0, 0, 0.171);
   border-radius: 10px;
   padding: 10px 10px;
-  margin-bottom: 5px;
+  
 }
 
 .icon {
@@ -456,21 +458,21 @@ margin-bottom: 80px;
   justify-content: center;
 }
 
-.card_1 h3 {
+.card-1 h3 {
   font-size: 20px;
   padding: 20px;
   margin-top: 40px;
 
 }
 
-.card_1 p {
+.card-content p {
   font-size: 16px;
   color:grey;
   padding: 15px;
   
 }
 
-.testimonials-section {
+.container-5 {
   padding: 90px 30px;
   background-color: #fff;
   text-align: center;
@@ -483,7 +485,7 @@ margin-bottom: 80px;
   color: #111;
 }
 
-.container-5 {
+.testimonial-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -528,7 +530,7 @@ margin-left: 150px;
   padding-left: 20px;
 }
 
-.container_6 {
+.container-6 {
   background: url('https://www.codewithharry.com/_next/image?url=%2Fcoding%2F1.jpg&w=1920&q=75') no-repeat center center/cover;
   height: 60vh;
   position: relative;
@@ -537,7 +539,7 @@ margin-left: 150px;
   justify-content: center;
 }
 
-.container_6 .overlay_1 {
+.container-6 .layout {
   position: absolute;
   top: 0;
   left: 0;
@@ -549,21 +551,21 @@ margin-left: 150px;
   justify-content: center;
 }
 
-.container_6 .content_1 {
+.container-6 .layout-1 {
   text-align: center;
   z-index: 1;
   max-width: 1000px;
 
 }
 
-.content_1 h1 {
+.layout-1 h1 {
   font-size: 63px;
   font-weight: 800;
   margin-bottom: 40px;
   color: #111;
 }
 
-.content_1 p {
+.layout-1 p {
   font-size: 1.3rem;
   color: #333333b7;
   margin-bottom: 40px;
@@ -571,7 +573,7 @@ margin-left: 150px;
 
 }
 
-.conten-btn {
+.layout-btn {
   background-color: #000;
   color: #fff;
   padding: 15px 40px;
